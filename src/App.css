@@ -78,6 +78,11 @@ h2{
   color:white;
   font-weight: bold;
 }
+.AnsDv h3{
+  margin-top: 1.5rem;
+  border-top: 1px solid #38B6FF;
+  padding: 10px;
+}
 
 .AnsDv h5{
   color: #38B6FF;

@@ -1,38 +1,144 @@
-.App {
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Quiz{
+  background-color: #252D4A;
+  color: white;
+  width: 80%;
+  margin: 1rem auto;
+  height: auto;
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 1px 1px 10px 1px #38B6FF 
+}
+
+.timeDiv{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #38B6FF;
+}
+
+.timeDiv p{display: flex;justify-content:center ;align-items: center;}
+
+h1{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.firstDiv{
+  /* border: 2px solid red; */
+  width: 60%;
+  height: 100px;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.secDiv{
+  /* border: 2px solid red; */
+  width: 40%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mainFlx{
+  display: flex
+}
+
+.btn_div{
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  
+}
+
+.btn_div button{
+  width: 250px;
+  
+  border:2px solid #38B6FF;
+  outline: none;
+  box-shadow: 1px 1px 6px 1px #38B6FF ;
+  margin-top: 1rem;
+  border-radius: 50px;
+  background-color: #252D4A;
+  font-weight: 900;
+  font-size: 16px;
   color: white;
+  padding: 10px;
+  
 }
 
-.App-link {
-  color: #61dafb;
+h2{
+  font-size: 24px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.AnsDv{
+  background-color: #252D4A;
+  width: 80%;
+  margin: 1rem auto;
+  padding: 10px;
+  color:white;
+  font-weight: bold;
+}
+
+.AnsDv h5{
+  color: #38B6FF;
+}
+
+.firstDiv h2{
+  margin-top: 2rem;
+}
+
+@media screen and (max-width :600px) {
+  .Quiz{
+    width: 100%;
+    height: 100vh;
+    margin: 0;  
   }
-  to {
-    transform: rotate(360deg);
+
+  .heading{display: none;}
+
+  .AnsDv h3{
+    margin-top: 1rem;
+  }
+}
+
+
+@media screen and (max-width :800px) {
+  .AnsDv{width: 90%;}
+  .AnsDv h3{font-size: 16px;}
+  /* .AnsDv h5{font-size: 16px;} */
+
+  /* .Quiz{
+    width: 100%;
+    height: 100vh;
+    margin: 0;  
+  } */
+  .timeDiv{
+    font-size: 10px;
+  }
+
+  /* .btn_div button{
+    width: 50%;
+  } */
+
+  h2{
+    font-size: 16px;
+  }
+
+  .mainFlx{
+   flex-direction: column;
+  }
+  
+  .firstDiv{
+    
+    width: 100%;
+  }
+
+  .firstDiv h2{
+    margin-top: 1rem;
+  }
+  
+  .secDiv{
+    width: 100%;
+    width: 100%;
   }
 }
